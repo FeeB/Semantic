@@ -1,0 +1,1738 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.fiktivefirma.com/ontologies/firma.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.fiktivefirma.com/ontologies/firma.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diese Ontologie beschreibt den Aufbau einer Firma</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Festangestellt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inhaber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mitarbeiter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Praktikant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamDigital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamDigital1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamDigital2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamDigital3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamGrafik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamGrafik1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamPR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamPR1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamPR2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamPR3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teamleiter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teamleiter_Ebene_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teamleiter_Ebene_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trainee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vorstandsmitglied"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BerichtetAn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IstKollegeVon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IstLeiterVon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IstMitarbeiterVon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IstUnterstellt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IstVertreterVon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#WirdGeleitetVon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#projectOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ben"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daniel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eugen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frank"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Holger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jonas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Justus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Klaus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maurice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Melanie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moritz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Niel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Projekt1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Projekt2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Projekt3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sascha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sebastian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sonja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stefanie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Susanne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Timo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#http://de.wikipedia.org/wiki/Karneval"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#http://de.wikipedia.org/wiki/Live_Music_Hall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#http://de.wikipedia.org/wiki/Penny-Markt"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Festangestellt"/>
+        <Class IRI="#Mitarbeiter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mitarbeiter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#Team"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Praktikant"/>
+        <Class IRI="#Mitarbeiter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Mitarbeiter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Team"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#WirdGeleitetVon"/>
+            <Class IRI="#Teamleiter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamDigital"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamDigital1"/>
+        <Class IRI="#TeamDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamDigital2"/>
+        <Class IRI="#TeamDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamDigital3"/>
+        <Class IRI="#TeamDigital"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamGrafik"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamGrafik1"/>
+        <Class IRI="#TeamGrafik"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamPR"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamPR1"/>
+        <Class IRI="#TeamPR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamPR2"/>
+        <Class IRI="#TeamPR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamPR3"/>
+        <Class IRI="#TeamPR1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teamleiter_Ebene_1"/>
+        <Class IRI="#Teamleiter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teamleiter_Ebene_2"/>
+        <Class IRI="#Teamleiter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trainee"/>
+        <Class IRI="#Mitarbeiter"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Festangestellt"/>
+        <NamedIndividual IRI="#Anja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital2"/>
+        <NamedIndividual IRI="#Anja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamDigital2"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Anja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital"/>
+        <NamedIndividual IRI="#Anna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vorstandsmitglied"/>
+        <NamedIndividual IRI="#Anna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamDigital"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Anna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Festangestellt"/>
+        <NamedIndividual IRI="#Ben"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital1"/>
+        <NamedIndividual IRI="#Ben"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamDigital1"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Ben"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamGrafik1"/>
+        <NamedIndividual IRI="#Daniel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trainee"/>
+        <NamedIndividual IRI="#Daniel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamGrafik1"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Daniel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital2"/>
+        <NamedIndividual IRI="#Emma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teamleiter_Ebene_2"/>
+        <NamedIndividual IRI="#Emma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamDigital2"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Emma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamPR"/>
+        <NamedIndividual IRI="#Eugen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vorstandsmitglied"/>
+        <NamedIndividual IRI="#Eugen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamPR"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Eugen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inhaber"/>
+        <NamedIndividual IRI="#Frank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Holger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamPR3"/>
+        <NamedIndividual IRI="#Holger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamPR3"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Holger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Jonas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital3"/>
+        <NamedIndividual IRI="#Jonas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamDigital3"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Jonas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamPR1"/>
+        <NamedIndividual IRI="#Justus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teamleiter_Ebene_2"/>
+        <NamedIndividual IRI="#Justus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamPR3"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Justus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamGrafik1"/>
+        <NamedIndividual IRI="#Klaus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teamleiter_Ebene_2"/>
+        <NamedIndividual IRI="#Klaus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamGrafik1"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Klaus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Festangestellt"/>
+        <NamedIndividual IRI="#Maurice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital1"/>
+        <NamedIndividual IRI="#Maurice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamDigital1"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Maurice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Praktikant"/>
+        <NamedIndividual IRI="#Melanie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital1"/>
+        <NamedIndividual IRI="#Melanie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamDigital1"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Melanie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Praktikant"/>
+        <NamedIndividual IRI="#Moritz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamPR2"/>
+        <NamedIndividual IRI="#Moritz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamPR2"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Moritz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Festangestellt"/>
+        <NamedIndividual IRI="#Niel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital3"/>
+        <NamedIndividual IRI="#Niel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamDigital3"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Niel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamPR1"/>
+        <NamedIndividual IRI="#Paul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teamleiter_Ebene_2"/>
+        <NamedIndividual IRI="#Paul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamPR1"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Paul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Festangestellt"/>
+        <NamedIndividual IRI="#Peter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamPR1"/>
+        <NamedIndividual IRI="#Peter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamPR1"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Peter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital2"/>
+        <NamedIndividual IRI="#Sascha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trainee"/>
+        <NamedIndividual IRI="#Sascha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamDigital2"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Sascha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital1"/>
+        <NamedIndividual IRI="#Sebastian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teamleiter_Ebene_2"/>
+        <NamedIndividual IRI="#Sebastian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamDigital1"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Sebastian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamDigital3"/>
+        <NamedIndividual IRI="#Sonja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teamleiter_Ebene_2"/>
+        <NamedIndividual IRI="#Sonja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamDigital3"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Sonja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamPR2"/>
+        <NamedIndividual IRI="#Stefanie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teamleiter_Ebene_2"/>
+        <NamedIndividual IRI="#Stefanie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamPR2"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Stefanie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Festangestellt"/>
+        <NamedIndividual IRI="#Susanne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamGrafik1"/>
+        <NamedIndividual IRI="#Susanne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamGrafik1"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Susanne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamGrafik"/>
+        <NamedIndividual IRI="#Timo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vorstandsmitglied"/>
+        <NamedIndividual IRI="#Timo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstLeiterVon"/>
+            <Class IRI="#TeamGrafik"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Timo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TeamPR3"/>
+        <NamedIndividual IRI="#Tina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Trainee"/>
+        <NamedIndividual IRI="#Tina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#IstMitarbeiterVon"/>
+            <Class IRI="#TeamPR3"/>
+        </ObjectAllValuesFrom>
+        <NamedIndividual IRI="#Tina"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Anja"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Ben"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <NamedIndividual IRI="#Emma"/>
+        <NamedIndividual IRI="#Eugen"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#Holger"/>
+        <NamedIndividual IRI="#Jonas"/>
+        <NamedIndividual IRI="#Justus"/>
+        <NamedIndividual IRI="#Klaus"/>
+        <NamedIndividual IRI="#Maurice"/>
+        <NamedIndividual IRI="#Melanie"/>
+        <NamedIndividual IRI="#Moritz"/>
+        <NamedIndividual IRI="#Niel"/>
+        <NamedIndividual IRI="#Paul"/>
+        <NamedIndividual IRI="#Peter"/>
+        <NamedIndividual IRI="#Sascha"/>
+        <NamedIndividual IRI="#Sebastian"/>
+        <NamedIndividual IRI="#Sonja"/>
+        <NamedIndividual IRI="#Stefanie"/>
+        <NamedIndividual IRI="#Susanne"/>
+        <NamedIndividual IRI="#Timo"/>
+        <NamedIndividual IRI="#Tina"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+        <NamedIndividual IRI="#Anja"/>
+        <NamedIndividual IRI="#Sascha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVertreterVon"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Eugen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Sonja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Sebastian"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Anna"/>
+        <NamedIndividual IRI="#Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Emma"/>
+        <NamedIndividual IRI="#Sascha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Emma"/>
+        <NamedIndividual IRI="#Anja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVertreterVon"/>
+        <NamedIndividual IRI="#Eugen"/>
+        <NamedIndividual IRI="#Timo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Eugen"/>
+        <NamedIndividual IRI="#Paul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Eugen"/>
+        <NamedIndividual IRI="#Stefanie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#Timo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#Eugen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+        <NamedIndividual IRI="#Holger"/>
+        <NamedIndividual IRI="#Moritz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Justus"/>
+        <NamedIndividual IRI="#Holger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Justus"/>
+        <NamedIndividual IRI="#Tina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Klaus"/>
+        <NamedIndividual IRI="#Daniel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Klaus"/>
+        <NamedIndividual IRI="#Susanne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+        <NamedIndividual IRI="#Niel"/>
+        <NamedIndividual IRI="#Daniel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/pastProject"/>
+        <NamedIndividual IRI="#Niel"/>
+        <NamedIndividual IRI="#Projekt1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Paul"/>
+        <NamedIndividual IRI="#Justus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Paul"/>
+        <NamedIndividual IRI="#Peter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+        <NamedIndividual IRI="#Projekt1"/>
+        <NamedIndividual IRI="#http://de.wikipedia.org/wiki/Penny-Markt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#projectOf"/>
+        <NamedIndividual IRI="#Projekt2"/>
+        <NamedIndividual IRI="#Melanie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#projectOf"/>
+        <NamedIndividual IRI="#Projekt2"/>
+        <NamedIndividual IRI="#Moritz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#projectOf"/>
+        <NamedIndividual IRI="#Projekt2"/>
+        <NamedIndividual IRI="#Susanne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+        <NamedIndividual IRI="#Projekt2"/>
+        <NamedIndividual IRI="#http://de.wikipedia.org/wiki/Live_Music_Hall"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#projectOf"/>
+        <NamedIndividual IRI="#Projekt3"/>
+        <NamedIndividual IRI="#Klaus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#projectOf"/>
+        <NamedIndividual IRI="#Projekt3"/>
+        <NamedIndividual IRI="#Peter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#projectOf"/>
+        <NamedIndividual IRI="#Projekt3"/>
+        <NamedIndividual IRI="#Niel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/homepage"/>
+        <NamedIndividual IRI="#Projekt3"/>
+        <NamedIndividual IRI="#http://de.wikipedia.org/wiki/Karneval"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/currentProject"/>
+        <NamedIndividual IRI="#Sascha"/>
+        <NamedIndividual IRI="#Projekt1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Sebastian"/>
+        <NamedIndividual IRI="#Melanie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Sebastian"/>
+        <NamedIndividual IRI="#Ben"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Sebastian"/>
+        <NamedIndividual IRI="#Maurice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Sonja"/>
+        <NamedIndividual IRI="#Niel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Sonja"/>
+        <NamedIndividual IRI="#Jonas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Stefanie"/>
+        <NamedIndividual IRI="#Moritz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVertreterVon"/>
+        <NamedIndividual IRI="#Timo"/>
+        <NamedIndividual IRI="#Anna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <NamedIndividual IRI="#Timo"/>
+        <NamedIndividual IRI="#Klaus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/currentProject"/>
+        <NamedIndividual IRI="#Tina"/>
+        <NamedIndividual IRI="#Projekt1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Anja"/>
+        <Literal datatypeIRI="&xsd;integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Anja"/>
+        <Literal datatypeIRI="&xsd;string">Neu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Anja"/>
+        <Literal datatypeIRI="&xsd;string">Anja
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Anja"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Anna"/>
+        <Literal datatypeIRI="&xsd;integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Anna"/>
+        <Literal datatypeIRI="&xsd;string">Jung</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Anna"/>
+        <Literal datatypeIRI="&xsd;string">Anna</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Anna"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Ben"/>
+        <Literal datatypeIRI="&xsd;integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Ben"/>
+        <Literal datatypeIRI="&xsd;string">Holzinger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Ben"/>
+        <Literal datatypeIRI="&xsd;string">Ben</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Ben"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal datatypeIRI="&xsd;integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal datatypeIRI="&xsd;string">Mustermann</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal datatypeIRI="&xsd;string">Daniel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Emma"/>
+        <Literal datatypeIRI="&xsd;integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Emma"/>
+        <Literal datatypeIRI="&xsd;string">Schön</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Emma"/>
+        <Literal datatypeIRI="&xsd;string">Emma</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Emma"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Eugen"/>
+        <Literal datatypeIRI="&xsd;integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Eugen"/>
+        <Literal datatypeIRI="&xsd;string">Wartig</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Eugen"/>
+        <Literal datatypeIRI="&xsd;string">Eugen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Eugen"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Frank"/>
+        <Literal datatypeIRI="&xsd;integer">53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Frank"/>
+        <Literal datatypeIRI="&xsd;string">Toll</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Frank"/>
+        <Literal datatypeIRI="&xsd;string">Frank</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Frank"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Holger"/>
+        <Literal datatypeIRI="&xsd;integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Holger"/>
+        <Literal datatypeIRI="&xsd;string">Neuzig</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Holger"/>
+        <Literal datatypeIRI="&xsd;string">Paul</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Holger"/>
+        <Literal datatypeIRI="&xsd;string">Holger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Holger"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Jonas"/>
+        <Literal datatypeIRI="&xsd;integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Jonas"/>
+        <Literal datatypeIRI="&xsd;string">Spat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Jonas"/>
+        <Literal datatypeIRI="&xsd;string">Jonas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Jonas"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Justus"/>
+        <Literal datatypeIRI="&xsd;integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Justus"/>
+        <Literal datatypeIRI="&xsd;string">Jonas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Justus"/>
+        <Literal datatypeIRI="&xsd;string">Justus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Justus"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Klaus"/>
+        <Literal datatypeIRI="&xsd;integer">33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Klaus"/>
+        <Literal datatypeIRI="&xsd;string">Scholzer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Klaus"/>
+        <Literal datatypeIRI="&xsd;string">Klaus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Klaus"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Maurice"/>
+        <Literal datatypeIRI="&xsd;integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Maurice"/>
+        <Literal datatypeIRI="&xsd;string">Maunten</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Maurice"/>
+        <Literal datatypeIRI="&xsd;string">Maurice</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Maurice"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Melanie"/>
+        <Literal datatypeIRI="&xsd;integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Melanie"/>
+        <Literal datatypeIRI="&xsd;string">Schögebauer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Melanie"/>
+        <Literal datatypeIRI="&xsd;string">Melanie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Melanie"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Moritz"/>
+        <Literal datatypeIRI="&xsd;integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Moritz"/>
+        <Literal datatypeIRI="&xsd;string">Heisen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Moritz"/>
+        <Literal datatypeIRI="&xsd;string">Moritz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Moritz"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Niel"/>
+        <Literal datatypeIRI="&xsd;integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Niel"/>
+        <Literal datatypeIRI="&xsd;string">Nielgen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Niel"/>
+        <Literal datatypeIRI="&xsd;string">Niel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Niel"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Paul"/>
+        <Literal datatypeIRI="&xsd;integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Paul"/>
+        <Literal datatypeIRI="&xsd;string">Heimann</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Paul"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/icqChatID"/>
+        <NamedIndividual IRI="#Paul"/>
+        <Literal datatypeIRI="&xsd;long">95600440</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Peter"/>
+        <Literal datatypeIRI="&xsd;integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Peter"/>
+        <Literal datatypeIRI="&xsd;string">Lustig</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Peter"/>
+        <Literal datatypeIRI="&xsd;string">Peter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Peter"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Sascha"/>
+        <Literal datatypeIRI="&xsd;integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Sascha"/>
+        <Literal datatypeIRI="&xsd;string">Hoch</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Sascha"/>
+        <Literal datatypeIRI="&xsd;string">Sascha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Sascha"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Sebastian"/>
+        <Literal datatypeIRI="&xsd;integer">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Sebastian"/>
+        <Literal datatypeIRI="&xsd;string">Burgen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Sebastian"/>
+        <Literal datatypeIRI="&xsd;string">Sebastian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Sebastian"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Sonja"/>
+        <Literal datatypeIRI="&xsd;integer">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Sonja"/>
+        <Literal datatypeIRI="&xsd;string">Sonnenbrau</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Sonja"/>
+        <Literal datatypeIRI="&xsd;string">Sonja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Sonja"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Stefanie"/>
+        <Literal datatypeIRI="&xsd;integer">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Stefanie"/>
+        <Literal datatypeIRI="&xsd;string">Schulzen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Stefanie"/>
+        <Literal datatypeIRI="&xsd;string">Stefanie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Stefanie"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Susanne"/>
+        <Literal datatypeIRI="&xsd;integer">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Susanne"/>
+        <Literal datatypeIRI="&xsd;string">Lichten</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Susanne"/>
+        <Literal datatypeIRI="&xsd;string">Susanne</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Susanne"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Timo"/>
+        <Literal datatypeIRI="&xsd;integer">44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Timo"/>
+        <Literal datatypeIRI="&xsd;string">Falke</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Timo"/>
+        <Literal datatypeIRI="&xsd;string">Timo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Timo"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <NamedIndividual IRI="#Tina"/>
+        <Literal datatypeIRI="&xsd;integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Tina"/>
+        <Literal datatypeIRI="&xsd;string">Turinger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Tina"/>
+        <Literal datatypeIRI="&xsd;string">Tina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <NamedIndividual IRI="#Tina"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#WirdGeleitetVon"/>
+        <ObjectProperty IRI="#IstLeiterVon"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#IstKollegeVon"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+        <Class IRI="#Mitarbeiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BerichtetAn"/>
+        <Class IRI="#Mitarbeiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IstKollegeVon"/>
+        <Class IRI="#Mitarbeiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IstLeiterVon"/>
+        <Class IRI="#Teamleiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IstMitarbeiterVon"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IstUnterstellt"/>
+        <Class IRI="#Mitarbeiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IstVertreterVon"/>
+        <Class IRI="#Teamleiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <Class IRI="#Teamleiter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#WirdGeleitetVon"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#projectOf"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+        <Class IRI="#Mitarbeiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BerichtetAn"/>
+        <Class IRI="#Teamleiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IstKollegeVon"/>
+        <Class IRI="#Mitarbeiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IstLeiterVon"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IstMitarbeiterVon"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IstUnterstellt"/>
+        <Class IRI="#Teamleiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IstVertreterVon"/>
+        <Class IRI="#Mitarbeiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IstVorgesetzterVon"/>
+        <Class IRI="#Mitarbeiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#WirdGeleitetVon"/>
+        <Class IRI="#Teamleiter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#projectOf"/>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Inhaber"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Festangestellt"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TeamDigital1"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TeamDigital1"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TeamDigital2"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TeamDigital2"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TeamDigital3"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TeamDigital3"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TeamGrafik1"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TeamGrafik1"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TeamPR1"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TeamPR1"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#TeamPR2"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#TeamPR2"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#ArbeitetZusammenMit"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Teamleiter"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Festangestellt"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Teamleiter_Ebene_2"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IstVorgesetzterVon"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IstVertreterVon"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Vorstandsmitglied"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Teamleiter_Ebene_1"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IstLeiterVon"/>
+                <Variable IRI="urn:swrl#z"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IstMitarbeiterVon"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IstUnterstellt"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IstUnterstellt"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#BerichtetAn"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IstVorgesetzterVon"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#IstUnterstellt"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#projectOf"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://xmlns.com/foaf/0.1/currentProject"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://xmlns.com/foaf/0.1/currentProject"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#projectOf"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DatatypeDefinition>
+        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:Name"/>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
